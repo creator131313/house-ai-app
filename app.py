@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template_string
 import joblib
 import pandas as pd
+import os
 
 app = Flask(__name__)
 model = joblib.load("house_model.pkl")
